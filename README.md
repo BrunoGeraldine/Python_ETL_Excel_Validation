@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/e14f36bb-1bb4-4ded-bdbe-8bdf7b8771b1)
+
+
 # Campaign Data Validator
 Data engineering project where I will validate tables in .csv or .xlsx format.
 
