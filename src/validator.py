@@ -13,7 +13,7 @@ class SalesSpreadsheet(BaseModel):
     Link_clicks: Optional[float] = Field(None, description="Number of link clicks", nullable=True)
     Impressions: Optional[float] = Field(0, description="Number of ad impressions", nullable=True)
     Conversions: Optional[float] = Field(None, description="Number of recorded conversions", nullable=True)
-    Segmentation: Optional[str] = Field(None, description="Segmentation used in the ad")
+    Segmentation: str = Field(None, description="Segmentation used in the ad")
     Ad_Type: str = Field(..., description="Type of ad")
     Phase: str = Field(..., description="Campaign phase")
 
