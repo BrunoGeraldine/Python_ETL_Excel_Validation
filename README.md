@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img width="1000" height="500" src="https://github.com/user-attachments/assets/e14f36bb-1bb4-4ded-bdbe-8bdf7b8771b1"
+  <img width="1000" height="200" src="https://github.com/user-attachments/assets/e14f36bb-1bb4-4ded-bdbe-8bdf7b8771b1"
        </p>
 
 # Campaign Data Validator
