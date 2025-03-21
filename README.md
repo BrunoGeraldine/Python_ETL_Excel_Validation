@@ -1,14 +1,73 @@
-# Python_ETL_Excel_Validation
-Data engineering project where I will validate tables in .xlsx format
+# Campaign Data Validator
+Data engineering project where I will validate tables in .csv or .xlsx format.
 
 
 
-# PandasProfiling to data exploration
-![alt text](image.png)
-https://docs.profiling.ydata.ai/latest/
+## Overview
+Campaign Data Validator is a Python-based application that validates sales campaign data from a CSV file using **Pydantic** for data validation and **Streamlit** for an interactive user interface. The tool ensures that all input data follows predefined constraints and allows users to download the validated dataset.
 
-** Essa analise exporatoria não estará inclusa no ETL, ssera apenas para entender o comportamento das tabelas para justamente validar os tipos de dados, colunas existentes e coluna de chave unica **
+## Features
+- **Data Validation**: Ensures that all records meet the specified constraints.
+- **CSV Upload**: Users can upload CSV files for validation.
+- **Error Reporting**: Displays errors found in the dataset.
+- **Validated Data Export**: Allows users to download a clean, validated CSV file.
+- **Interactive UI**: Built with **Streamlit** for ease of use.
 
-# Pydent e Pandera validação de dados
+## Technologies Used
+- **Python**
+- **Pandas**
+- **Streamlit**
+- **Pydantic**
 
-Salvar no banco de dados
+## Installation
+To set up and run the project locally, follow these steps:
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+To start the Streamlit app, run:
+```bash
+streamlit run app.py
+```
+
+Then, upload a CSV file containing campaign data and click the **Validate Data** button. The tool will validate the dataset and show any errors found. If all data is valid, users can download the cleaned file.
+
+## Data Model
+The application validates data against the following schema:
+
+```python
+class SalesSpreadsheet(BaseModel):
+    Organizer: int
+    Year_Month: str
+    Day_of_Week: str
+    Day_Type: str
+    Goal: str
+    Date: str
+    AdSet_name: Optional[str]
+    Amount_spent: float
+    Link_clicks: Optional[float]
+    Impressions: Optional[float]
+    Conversions: Optional[float]
+    Segmentation: str
+    Ad_Type: str
+    Phase: str
+```
+
+## Example CSV Structure
+| Organizer | Year_Month | Day_of_Week | Day_Type | Goal    | Date       | AdSet_name | Amount_spent | Link_clicks | Impressions | Conversions | Segmentation | Ad_Type | Phase |
+|-----------|-----------|-------------|----------|---------|------------|------------|--------------|-------------|-------------|-------------|-------------|---------|-------|
+| 123       | 2024-03   | Monday      | Business | Sales   | 2024-03-01 | AdGroup A  | 250.00       | 45          | 12000       | 3           | Audience A  | Banner  | Launch |
+
+## Contributing
+Contributions are welcome! To contribute:
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request
+
+## License
+This project is licensed under the MIT License.
+
