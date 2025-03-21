@@ -22,7 +22,19 @@ def validate_data(df):
     return validated_data, errors
 
 def main():
-    st.title("Campaign Data Validator")
+    st.set_page_config(layout="wide", page_title="Campaign Data Validator", initial_sidebar_state="expanded")
+
+    # Aplicar dark mode via CSS
+    st.markdown("""
+        <style>
+        .stApp {
+            background-color: #0E1117;
+            color: #FAFAFA;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+    st.title("Table Data Validator")
     st.write("Upload the CSV file for validation")
     
     uploaded_file = st.file_uploader("Choose a data", type=["csv", "xlsx"])
