@@ -25,7 +25,7 @@ def main():
     st.title("Campaign Data Validator")
     st.write("Upload the CSV file for validation")
     
-    uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
+    uploaded_file = st.file_uploader("../data-base/data.csv", type="csv")
     
     if uploaded_file is not None:
         try:
