@@ -73,5 +73,5 @@ Contributions are welcome! To contribute:
 This project is licensed under the MIT License.
 
 ## Reference:
-[link](https://docs.pydantic.dev/latest/api/types/)
+[![image](https://github.com/user-attachments/assets/39e3216b-c937-487b-821f-80c3fe23cdbe)](https://docs.pydantic.dev/latest/api/types/)
 
