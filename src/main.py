@@ -1,6 +1,6 @@
 import pandas as pd
 
-from ydata_profiling import ProfileReport
+from import ProfileReport
 
 df = pd.read_csv('../data-base/data.csv')
 profile = ProfileReport(df, title='Profiling Report')
