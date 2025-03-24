@@ -1,18 +1,26 @@
-![image](https://github.com/user-attachments/assets/e14f36bb-1bb4-4ded-bdbe-8bdf7b8771b1)
+
+<p align="center">
+  <img width="800" height="200" src="https://github.com/user-attachments/assets/e14f36bb-1bb4-4ded-bdbe-8bdf7b8771b1"
+       </p>
+
+# Table Data Validator
+Data engineering project where I will validate tables in .csv
 
 
-# Campaign Data Validator
-Data engineering project where I will validate tables in .csv or .xlsx format.
-
-![image](https://github.com/user-attachments/assets/21a7448e-dff0-458a-b475-733ee3dd4f41)
+<p align="center">
+  <img width="800" height="300" src="https://github.com/user-attachments/assets/21a7448e-dff0-458a-b475-733ee3dd4f41"
+       </p>
 
 
 
 
 ## Overview
-Campaign Data Validator is a Python-based application that validates sales campaign data from a CSV file using **Pydantic** for data validation and **Streamlit** for an interactive user interface. The tool ensures that all input data follows predefined constraints and allows users to download the validated dataset.
+Table Data Validator is a Python-based application that validates sales campaign data from a CSV file using **Pydantic** for data validation and **Streamlit** for an interactive user interface. The tool ensures that all input data follows predefined constraints and allows users to download the validated dataset.
 
-![image](https://github.com/user-attachments/assets/9a031e63-727d-4fc5-8bbb-4bd717d1b1e1)
+<p align="center">
+  <img width="300" height="100" src="https://github.com/user-attachments/assets/9a031e63-727d-4fc5-8bbb-4bd717d1b1e1"
+       </p>
+   
 
 
 ## Features
